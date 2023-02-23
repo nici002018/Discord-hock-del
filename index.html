@@ -1,0 +1,29 @@
+<HTMl>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<head>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+    <title>
+      Niceas
+    </title>
+    <div class="container">
+  <h1>Webhook Deleter</h1>
+  <h3>By Niceas</h3>
+  <div class="form-group">
+    <input type="url" name = "deleteurl" id="deleteurl">
+      <button onclick="deletewebhook()">Delete</button>
+      <script>
+          function deletewebhook() {
+            console.log(document.getElementsByName('deleteurl'))
+            var deleteurl = document.getElementById("deleteurl").value;
+            $.ajax({
+              type: "DELETE",
+              url: deleteurl,
+            });
+          }
+    </script>
+  </div>
+</div>
+    
+</HTMl>
