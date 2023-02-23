@@ -1,3 +1,5 @@
+https://nici002018.github.io/Discord-hock-del/
+
 # Discord-hock-del
 Discord-hock-del is a simple webhook deleter.
 
