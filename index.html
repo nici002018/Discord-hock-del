@@ -1,28 +1,27 @@
 <HTMl>
-<head>
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <title>Discord Hock Del</title>
-</head>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+   <title>Discord Hock Del</title>
+  </head>
   
-<body>
-
-  <div class="container">
-  <h1>Discord Webhook Deleter</h1>
-  <h3>By Niceas / Nici002018</h3>
-  <div class="form-group">
-    <input type="url" name = "deleteurl" id="deleteurl">
-      <button onclick="deletewebhook()">Delete</button>
-      <script>
-          function deletewebhook() {
-            console.log(document.getElementsByName('deleteurl'))
-            var deleteurl = document.getElementById("deleteurl").value;
-            $.ajax({
-              type: "DELETE",
-              url: deleteurl,
-            });
-          }
-    </script>
-  </div>
-</div>
-    </body>
+  <body>
+   <div class="container">
+    <h1>Discord Webhook Deleter</h1>
+    <h3>By Niceas / Nici002018</h3>
+      <div class="form-group">
+        <input type="url" name = "deleteurl" id="deleteurl">
+        <button onclick="deletewebhook()">Delete</button>
+        <script>
+              function deletewebhook() {
+               console.log(document.getElementsByName('deleteurl'))
+               var deleteurl = document.getElementById("deleteurl").value;
+                $.ajax({
+                type: "DELETE",
+                url: deleteurl,
+              });
+              }
+        </script>
+      </div>
+    </div>
+  </body>
 </HTMl>
