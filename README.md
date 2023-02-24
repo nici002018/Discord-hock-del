@@ -7,4 +7,4 @@ You just need the webhook link and paste in and then you just click on delete.
 ## Demo
 
 https://nici002018.github.io/Discord-hock-del/
-
+http://88.214.57.117:8100/webhookdel/index.html
